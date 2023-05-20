@@ -1,0 +1,24 @@
+1.> Create Struct for Voter And Candidate Each.
+2.> Initialize counter for Voter and Candidate each to 1.
+3.> Declare necessary variables with suitable datatype.
+4.> Create Voter and Candidate Arrays to Store All the Struct Voter and Candidate information.
+5.> Create mappings for structs created in step 1 with integer variables.
+6.> Create constructor initializing election commissioner as the deployer account.
+7.> Create reusable Voter And Candidate verifcation functions to check if user already present on the block to avoid redundancy.
+8.> Create functions to displays all the voter and candidate information stored in the respective arrays.
+9.> Write Voter and Candidate Registration function and storing the passed information in struct blocks and as well in the array.
+    i.>Perform voterVerification before pushing it onto block.
+   ii.>Check if enrolling user is above 18.
+10.> Write delete and update functions for Voter and Candidate registered through registration function.
+     i.>Perform voterVerification before pushing it onto block.
+    ii.> Check if the same candidate or voter is performing the update or delete operations
+11.> Write a function Vote to perform vote casting to deserving and appropriate selected candidate by the voter.
+     i.> Allow the voter to vote only if voting has started.
+    ii.> Check if voter is a registered entity.
+   iii.> Check if voter has already voted.
+ 
+Admin controls
+12.> Create a function to set time(start time, end time) which can only be altered or tailored by the election commisioner.
+13.> Create a stop voting function in case of emergency.
+14.> Display results and find maxVoted Candidate.
+15.> Create a reset function to reset all the stored data on the block and make it available for next election cycle. 
