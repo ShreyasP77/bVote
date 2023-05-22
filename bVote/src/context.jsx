@@ -7,7 +7,6 @@ import { ethers } from "ethers";
 
 const AppContext = React.createContext();
 
-// const API = "https://thapareactapi.up.railway.app";
 
 const intialState = {
   name: "",
@@ -41,8 +40,8 @@ const intialState = {
   }
 
 };
-// const API = "https://dummyjson.com/products?limit=10&skip=10&select=title,price"
-const API = "https://script.google.com/macros/s/AKfycbzfJyn86gSFkPVKjpnHRlsPL4Aa5IUdATnTyVHSwx4Kkgigu6piVHTMidu4zXUmZL4hww/exec?action=getUsers"
+
+const API = ""
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, intialState);
 
@@ -52,7 +51,7 @@ const AppProvider = ({ children }) => {
 
   const connectWallet = async () => {
 
-    const contractAddress = "0xBB5c6FCe8ff9EF03eD99051f77182a548c5dE737"
+    const contractAddress = ""
     const contractABI = abi.abi;
 
     try {
@@ -100,9 +99,9 @@ const AppProvider = ({ children }) => {
 
 
         let arr = [
-          { mId:"0xbFe482D1eb3134835b5360b1Cae601FdFB3451b5", party:"Group 14" },
-          { mId:"0x1E4803275F0f02AaFC4bcb57Cf1A5A5De41301D1", party:"Group 38"},
-          { mId:"0x003CD73737f0ea85f31849d5faf2E4a816D6a00f", party:"Group 13"}
+          { mId:"", party:"Group 14" },
+          { mId:"", party:"Group 38"},
+          { mId:"", party:"Group 13"}
       ];
       console.log((await contract.nextCandidateId()).toNumber())
       
